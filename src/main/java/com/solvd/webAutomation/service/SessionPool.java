@@ -1,4 +1,4 @@
-package service;
+package com.solvd.webAutomation.service;
 
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;

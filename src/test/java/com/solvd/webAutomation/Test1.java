@@ -1,10 +1,12 @@
+package com.solvd.webAutomation;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.HomePage;
-import pages.MenuElementPage;
-import pages.ShiftingContentPage;
-import service.SessionPool;
+import com.solvd.webAutomation.pages.HomePage;
+import com.solvd.webAutomation.pages.MenuElementPage;
+import com.solvd.webAutomation.pages.ShiftingContentPage;
+import com.solvd.webAutomation.service.SessionPool;
 
 /**First exercise.
  *      1. Go to Home page

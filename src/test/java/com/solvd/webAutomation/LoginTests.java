@@ -1,10 +1,12 @@
+package com.solvd.webAutomation;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.HomePage;
-import pages.LoginPage;
-import pages.SecuredAreaPage;
-import service.SessionPool;
+import com.solvd.webAutomation.pages.HomePage;
+import com.solvd.webAutomation.pages.LoginPage;
+import com.solvd.webAutomation.pages.SecuredAreaPage;
+import com.solvd.webAutomation.service.SessionPool;
 
 /**
  * Login Tests:
@@ -13,7 +15,7 @@ import service.SessionPool;
  * 3. Login with incorrect username
  * 4. Login without username and password
  * */
-public class LoginTests extends BaseTests{
+public class LoginTests extends BaseTests {
     private WebDriver driver = SessionPool.getINSTANCE().getDriver();
     private HomePage homePage = new HomePage(driver);
     private LoginPage loginPage;
