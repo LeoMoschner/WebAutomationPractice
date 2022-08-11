@@ -1,5 +1,6 @@
 package com.solvd.webAutomation;
 
+import com.solvd.webAutomation.utils.HomePageLinks;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -23,7 +24,7 @@ public class Test1 extends BaseTests {
 
     @Test
     public void testMenuElementsAmount() {
-        shiftingContentPage = (ShiftingContentPage) homePage.clickLinkByText("Shifting Content");
+        shiftingContentPage = (ShiftingContentPage) homePage.clickLinkByText(HomePageLinks.LOGIN);
         menuElementPage = shiftingContentPage.clickMenuElement();
         int elementsAmount = menuElementPage.countElements();
         System.out.println("Amount of Elements: " + elementsAmount);
