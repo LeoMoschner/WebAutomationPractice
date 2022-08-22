@@ -12,6 +12,9 @@ public class HomePage extends BasicPage{
         switch (link){
             case LOGIN: return new LoginPage(driver);
             case SHIFT_CONTENT: return new ShiftingContentPage(driver);
+            case FORGOT_PASSWORD: return new ForgotPasswordPage(driver);
+            case HORIZONTAL_SLIDER: return new HorizontalSliderPage(driver);
+            case CONTEXT_MENU: return new ContextMenuPage(driver);
             default:
                 System.out.println("ERROR: There is no page called " + link.getLinkText());
                 return null;
