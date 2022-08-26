@@ -16,12 +16,10 @@ public class LoginPage extends BasicPage{
         driver.findElement(userName)
                 .sendKeys(text);
     }
-
     public void setPassword(String text) {
         driver.findElement(password)
                 .sendKeys(text);
     }
-
     public SecuredAreaPage clickLoginButton(){
         driver.findElement(loginButton)
                 .click();

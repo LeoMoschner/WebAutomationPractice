@@ -5,7 +5,8 @@ public enum HomePageLinks {
     SHIFT_CONTENT ("Shifting Content"),
     FORGOT_PASSWORD ("Forgot Password"),
     HORIZONTAL_SLIDER ("Horizontal Slider"),
-    CONTEXT_MENU("Context Menu");
+    CONTEXT_MENU("Context Menu"),
+    DYNAMIC_LOAD ("Dynamic Loading");
     private String linkText;
     HomePageLinks(String linkText) {
         this.linkText = linkText;

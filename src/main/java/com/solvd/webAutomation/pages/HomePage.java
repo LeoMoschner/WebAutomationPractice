@@ -15,6 +15,7 @@ public class HomePage extends BasicPage{
             case FORGOT_PASSWORD: return new ForgotPasswordPage(driver);
             case HORIZONTAL_SLIDER: return new HorizontalSliderPage(driver);
             case CONTEXT_MENU: return new ContextMenuPage(driver);
+            case DYNAMIC_LOAD:return new DynamicLoadPage(driver);
             default:
                 System.out.println("ERROR: There is no page called " + link.getLinkText());
                 return null;
