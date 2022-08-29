@@ -15,6 +15,7 @@ public class ContextMenuPage extends BasicPage{
     }
     public void rightClickBox(){
         actions.contextClick(driver.findElement(box)).perform();
+        actions.click().perform();
     }
     public String getAlertText(){
         return driver.switchTo().alert().getText();
