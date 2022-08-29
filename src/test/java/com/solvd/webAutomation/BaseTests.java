@@ -16,6 +16,6 @@ public class BaseTests {
     }
     @AfterClass
     public void closeSession(){
-        //driver.close();
+        driver.close();
     }
 }
