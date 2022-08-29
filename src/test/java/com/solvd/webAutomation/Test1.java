@@ -24,7 +24,7 @@ public class Test1 extends BaseTests {
 
     @Test
     public void testMenuElementsAmount() {
-        shiftingContentPage = (ShiftingContentPage) homePage.clickLinkByText(HomePageLinks.LOGIN);
+        shiftingContentPage = (ShiftingContentPage) homePage.clickLinkByText(HomePageLinks.SHIFT_CONTENT);
         menuElementPage = shiftingContentPage.clickMenuElement();
         int elementsAmount = menuElementPage.countElements();
         System.out.println("Amount of Elements: " + elementsAmount);

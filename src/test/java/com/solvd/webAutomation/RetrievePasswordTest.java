@@ -19,6 +19,6 @@ public class RetrievePasswordTest extends BaseTests{
                 .clickLinkByText(HomePageLinks.FORGOT_PASSWORD);
         forgotPasswordPage.setEmail(EMAIL);
         forgotPasswordPage.clickRetrievePw();
-        Assert.assertEquals(forgotPasswordPage.getTittle(), "Your e-mail's been sent!");
+        Assert.assertFalse(forgotPasswordPage.getTittle().equals("Your e-mail's been sent!"));
     }
 }
