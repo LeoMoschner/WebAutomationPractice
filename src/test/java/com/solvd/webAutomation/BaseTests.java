@@ -1,6 +1,7 @@
 package com.solvd.webAutomation;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import com.solvd.webAutomation.service.SessionPool;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +15,7 @@ public class BaseTests {
     public void setUp() {
         driver.get("https://the-internet.herokuapp.com/");
     }
-    @AfterClass
+    @AfterSuite
     public void closeSession(){
         driver.close();
     }
