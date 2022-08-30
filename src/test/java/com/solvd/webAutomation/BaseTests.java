@@ -12,8 +12,6 @@ import org.openqa.selenium.WebDriver;
 
 import java.io.File;
 import java.io.IOException;
-
-
 public class BaseTests {
     private WebDriver driver = SessionPool.getINSTANCE().getDriver();
     @BeforeMethod

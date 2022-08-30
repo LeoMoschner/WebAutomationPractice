@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 
 public class TextEditorFramePage extends BasicPage{
     private final By textBox = By.id("tinymce");
-    //Negrita
     private final By boldButton = By.xpath("//button[@title = 'Bold']");
     public TextEditorFramePage(WebDriver driver){
         super(driver);

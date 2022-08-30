@@ -16,7 +16,7 @@ public class DynamicLoadExample1Page extends BasicPage{
     }
     public void clickStartButton(){
         driver.findElement(startButton).click();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(finishText)));
     }
     public String getFinishText(){
