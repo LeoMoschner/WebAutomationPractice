@@ -49,7 +49,6 @@ public class LoginTests extends BaseTests {
         securedAreaPage = loginPage.clickLoginButton();
         Assert.assertFalse(securedAreaPage.getTextAlert().contains("You logged into a secure area!"));
     }
-
     @Test
     public void correctUsernameWrongPw () {
         loginPage = (LoginPage) homePage.clickLinkByText(HomePageLinks.LOGIN);
@@ -58,7 +57,6 @@ public class LoginTests extends BaseTests {
         securedAreaPage = loginPage.clickLoginButton();
         Assert.assertFalse(securedAreaPage.getTextAlert().contains("You logged into a secure area!"));
     }
-
     @Test
     public void wrongUserName() {
         loginPage = (LoginPage) homePage.clickLinkByText(HomePageLinks.LOGIN);

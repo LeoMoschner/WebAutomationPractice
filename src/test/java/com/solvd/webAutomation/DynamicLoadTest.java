@@ -24,7 +24,6 @@ public class DynamicLoadTest extends BaseTests {
         dynamicLoadExample1Page.clickStartButton();
         Assert.assertEquals(dynamicLoadExample1Page.getFinishText(), "Hello World!");
     }
-    //Ver como hacer para buscar visibilityOf finish element.
     @Test
     public void example2Test(){
         dynamicLoadPage = (DynamicLoadPage) homePage.clickLinkByText(HomePageLinks.DYNAMIC_LOAD);
