@@ -7,7 +7,8 @@ public enum HomePageLinks {
     HORIZONTAL_SLIDER ("Horizontal Slider"),
     CONTEXT_MENU("Context Menu"),
     DYNAMIC_LOAD ("Dynamic Loading"),
-    FRAMES ("Frames");
+    FRAMES ("Frames"),
+    DYNAMIC_CONTENT("Dynamic Content");
     private String linkText;
     HomePageLinks(String linkText) {
         this.linkText = linkText;

@@ -17,6 +17,7 @@ public class HomePage extends BasicPage{
             case CONTEXT_MENU: return new ContextMenuPage(driver);
             case DYNAMIC_LOAD: return new DynamicLoadPage(driver);
             case FRAMES: return new FramesPage(driver);
+            case DYNAMIC_CONTENT: return new DynamicContentPage(driver);
             default:
                 System.out.println("ERROR: There is no page called " + link.getLinkText());
                 return null;
